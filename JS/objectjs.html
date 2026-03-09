@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let myInfo = {
+        name: "Abhay jeet ",
+        age: 23,
+        isMarried: false,
+        address: {
+            streetno: '25k',
+            area: "chipiyana",
+            pincode: 273015,
+            city: "Ghaziabad",
+        },
+        course: "Btech",
+        branch: "CSE",
+        yea: 2025,
+        education: function() {
+            console.log("my education is " + myInfo.course + " and " + myInfo.yea);
+        }
+    };
+    myInfo.education();  // Call the function
+    console.log(myInfo.address.city);
+    console.log(myInfo.name);
+    // Find object length
+    let keys = Object.keys(myInfo);
+    console.log(keys.length);
+// delete object property
+console.log(delete myInfo.name);
+console.log(myInfo);
+// print object property using for loop
+for(let i=0; i<keys.length;i++){
+    console.log(keys[i]+":"+ myInfo[keys[i]]);
+
+        
+    
+}
+// print object property using for in loop
+for( let x in myInfo){
+    console.log(myInfo[x]);
+}
+
+//create object using new keyword 
+let student =new Object();
+student.name= "abhay jeet ";
+student.course="B.tech";
+student.age=25;
+student.address="ghaziabad";
+student.isMarried = false;
+console.log(student.name);
+
+
+</script>
+</body>
+</html>
