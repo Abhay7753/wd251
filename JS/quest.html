@@ -13,8 +13,30 @@
 <script>
     function calculate (){
         let n1= document.getElementByID("num1").value;
-        let n2=document.getElementByID("num2").values;
-        
+        let n2=document.getElementByID("num2").value;
+
+
+        let num1=Number(n1);
+        let num2=Number(n2);
+
+        if(n1===""||n2===""){
+            document.getElementByID("output").inerHTML=
+            "Please enter both number";
+
+
+            let sum =num1+num2;
+            let difference=num1-num2;
+            let product =num1*num2;
+
+
+
+            document.getElementByID("output").inerHTML=
+            sum:$
+    
+        }
+
+
+
     }
 
 </script>
